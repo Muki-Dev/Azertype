@@ -20,8 +20,8 @@ if(choix === "Mots"){
             score++;
         }
     }
-    console.log("Le score de mot est: " + score + "/" + listeMots.length);
-}else if(choix === "Phrases"){
+    console.log("votre score est: " + score + " sur " + listeMots.length);
+}else{
     // Repeter le code avec une boucle
     for(let i = 0 ; i < listePhrases.length ; i++){
         let motUtilisateur = prompt("Tapez la phrase: " + listePhrases[i]);
@@ -29,8 +29,6 @@ if(choix === "Mots"){
             score++;
         }
     }
-    console.log("Le score de phrase est: " + score + "/" + listePhrases.length);
-}else{
-    console.log("le score est" + score);
+    console.log("votre score est: " + score + " sur " + listePhrases.length);
 }
 
