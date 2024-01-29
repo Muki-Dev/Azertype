@@ -12,12 +12,25 @@ let choix = prompt("tapez 'Mots' ou 'phrases'");
 while(choix !== "Mots" && choix !== "Phrases"){
     choix = prompt("tapez 'Mots' ou 'phrases");
 }
-console.log("ok!👍");
-// Repeter le code avec une boucle
-// for(let i = 0 ; i < listeMots.length ; i++){
-//     let motUtilisateur = prompt("Tapez les 3 mots de la listes: " + listeMots[i]);
-//     if(motUtilisateur === listeMots[i]){
-//         score++
-//     }
-// }
-// console.log(score);
+if(choix === "Mots"){
+    // Repeter le code avec une boucle
+    for(let i = 0 ; i < listeMots.length ; i++){
+        let motUtilisateur = prompt("Tapez le mot: " + listeMots[i]);
+        if(motUtilisateur === listeMots[i]){
+            score++;
+        }
+    }
+    console.log("Le score de mot est: " + score + "/" + listeMots.length);
+}else if(choix === "Phrases"){
+    // Repeter le code avec une boucle
+    for(let i = 0 ; i < listePhrases.length ; i++){
+        let motUtilisateur = prompt("Tapez la phrase: " + listePhrases[i]);
+        if(motUtilisateur === listePhrases[i]){
+            score++;
+        }
+    }
+    console.log("Le score de phrase est: " + score + "/" + listePhrases.length);
+}else{
+    console.log("le score est" + score);
+}
+
