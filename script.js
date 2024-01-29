@@ -1,18 +1,34 @@
-// let motTapezOK = false;
-// if(motTapezOK){
-//     console.log("Bravo, vous avez correctement tapé le mot");
-// }else{
-//     console.log("Échec, le mot n'est pas correct");
+//  Déclarez une variable listeMots qui est un tableau
+const listeMots = ["Cachalot", "Pétunia" , "Serviette"];
 
-// }
+// Déclarez un tableau listePhrases
+const listePhrases = ["Pas de panique !", "La vie, l’univers et le reste", "Merci pour le poisson"];
 
-// let motUtilisateur = prompt("Entrez un mot:");
-// console.log(motUtilisateur);
+// Déclarez une deuxième variable score
+let score = 0;
 
-let motApplication = "Bonjour";
-let motUtilisateur = prompt("Entrez le mot " + motApplication);
-if(motUtilisateur === motApplication){
-    console.log("Bravo!")
-}else{
-    console.log("Vous avez fait une erreur de frappe.");
+// Répétez la question tant que l’utilisateur n’a pas écrit “mots” ou “phrases”.
+let choix = prompt("tapez 'Mots' ou 'phrases'");
+while(choix !== "Mots" && choix !== "Phrases"){
+    choix = prompt("tapez 'Mots' ou 'phrases");
 }
+if(choix === "Mots"){
+    // Repeter le code avec une boucle
+    for(let i = 0 ; i < listeMots.length ; i++){
+        let motUtilisateur = prompt("Tapez le mot: " + listeMots[i]);
+        if(motUtilisateur === listeMots[i]){
+            score++;
+        }
+    }
+    console.log("votre score est: " + score + " sur " + listeMots.length);
+}else{
+    // Repeter le code avec une boucle
+    for(let i = 0 ; i < listePhrases.length ; i++){
+        let motUtilisateur = prompt("Tapez la phrase: " + listePhrases[i]);
+        if(motUtilisateur === listePhrases[i]){
+            score++;
+        }
+    }
+    console.log("votre score est: " + score + " sur " + listePhrases.length);
+}
+
