@@ -9,7 +9,7 @@ let score = 0;
 
 // Répétez la question tant que l’utilisateur n’a pas écrit “mots” ou “phrases”.
 let choix = prompt("tapez 'Mots' ou 'phrases'");
-while(choix !== "Mots" || choix !== "Phrases"){
+while(choix !== "Mots" && choix !== "Phrases"){
     choix = prompt("tapez 'Mots' ou 'phrases");
 }
 console.log("ok!👍");
