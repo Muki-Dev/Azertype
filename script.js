@@ -9,4 +9,6 @@ let motUtilisateur = prompt("Entrez le premier mot de la liste: " + listeMots[0]
 if(motUtilisateur === listeMots[0]){
     score += 1;
     console.log(score);
+}else{
+    console.log("Vous avez fait une erreur de frappe, ressayer enocre!")
 }
