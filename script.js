@@ -4,20 +4,10 @@ const listeMots = ["Cachalot", "Pétunia" , "Serviette"];
 // Déclarez une deuxième variable score
 let score = 0;
 
-
-let motUtilisateur = prompt("Entrez le mot: " + listeMots[0]);
-if(motUtilisateur === listeMots[0]){
-    score++
+for(let i = 0 ; i < listeMots.length ; i++){
+    let motUtilisateur = prompt("Tapez les 3 mots de la listes: " + listeMots[i]);
+    if(motUtilisateur === listeMots[i]){
+        score++
+    }
 }
-
- motUtilisateur = prompt("Entrez mot: " + listeMots[1]);
-if(motUtilisateur === listeMots[1]){
-    score ++;
-}
-
- motUtilisateur = prompt("Entrez mot: " + listeMots[2]);
-if(motUtilisateur === listeMots[2]){
-    score ++;
-}
-
 console.log(score);
