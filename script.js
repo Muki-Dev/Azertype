@@ -36,7 +36,5 @@ function lancerJeu(){
         nbMotsProposes = listePhrases.length;
     }
 
-    afficherResultat(score,nbMotsProposes)
+    afficherResultat(score,nbMotsProposes);
 }
-
-lancerJeu();
