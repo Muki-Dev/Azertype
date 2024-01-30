@@ -1,6 +1,8 @@
 function afficherResultat(score,nbMotsProposes){
     // on affiche le score de l'utilisateur
-    console.log("votre score est " + score + " sur " + nbMotsProposes);
+    let spanScore = document.querySelector('.zoneScore span');
+    let affichageScore = ` ${score} / ${nbMotsProposes}`;
+    spanScore.innerHTML = affichageScore;
 }
 
 function choisirPhrasesOuMots(){
