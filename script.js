@@ -36,3 +36,13 @@ function afficherResultat(score,nbMotsProposes){
     // on affiche le score de l'utilisateur
     console.log("votre score est " + score + " sur " + nbMotsProposes);
 }
+
+function choisirPhrasesOuMots(){
+    // Tant que l'utilisateur n'a pas choisis "mots" ou "phrases",on lui redemande
+    let choix = prompt("Voulez-vous jouez avec les mots (entrez 'mots') ou les phrases (entrez 'phrases')");
+    if(choix !== "mots" && choix !== "phrases"){
+        choix = prompt("Vous devez choisir entre 'mots' ou 'phrases'");
+    }
+
+    return choix;
+}
