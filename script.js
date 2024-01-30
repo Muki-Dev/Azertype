@@ -46,3 +46,14 @@ function choisirPhrasesOuMots(){
 
     return choix;
 }
+
+function lancerBoucleDeJeu(listesPropositions){
+    let score = 0;
+    for(let i = 0 ; i < listesPropositions.length ; i++){
+        motUtilisateur = prompt("Entrez le mot: " + listesPropositions[i])
+        if(motUtilisateur === listesPropositions[i]){
+            score++
+        }
+    }
+    return score;
+}
