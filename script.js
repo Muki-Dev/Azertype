@@ -1,9 +1,3 @@
-//  Déclarez une variable listeMots qui est un tableau
-const listeMots = ["Cachalot", "Pétunia" , "Serviette"];
-
-// Déclarez un tableau listePhrases
-const listePhrases = ["Pas de panique !", "La vie, l’univers et le reste", "Merci pour le poisson"];
-
 function afficherResultat(score,nbMotsProposes){
     // on affiche le score de l'utilisateur
     console.log("votre score est " + score + " sur " + nbMotsProposes);
