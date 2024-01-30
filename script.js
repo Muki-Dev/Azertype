@@ -32,3 +32,7 @@ if(choix === "Mots"){
     console.log("votre score est: " + score + " sur " + listePhrases.length);
 }
 
+function afficherResultat(score,nbMotsProposes){
+    // on affiche le score de l'utilisateur
+    console.log("votre score est " + score + " sur " + nbMotsProposes);
+}
