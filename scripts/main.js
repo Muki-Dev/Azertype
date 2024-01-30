@@ -7,3 +7,5 @@ let btnValiderMot = document.getElementById("btnValiderMot");
 let zoneProposition = document.querySelector(".zoneProposition");
 
 let zoneScore = document.querySelector(".zoneScore span");
+
+let listesBoutonRadio = document.querySelectorAll(".optionSource input");
