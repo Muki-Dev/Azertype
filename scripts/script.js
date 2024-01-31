@@ -12,11 +12,15 @@ function afficherResultat(score,nbMotsProposes){
 function lancerJeu(){
     let score = 0;
     let nbMotsProposes = 0;
-    
+
+    let zoneEcriture = document.getElementById('inputEcriture');
+
     let btnValiderMot = document.getElementById('btnValiderMot');
+    
     btnValiderMot.addEventListener('click',()=>{
-        console.log("j'ai cliqué");
+        console.log(zoneEcriture.value);
     })
+    
     
     afficherResultat(score,nbMotsProposes);
 }
