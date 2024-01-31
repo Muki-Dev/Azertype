@@ -13,5 +13,10 @@ function lancerJeu(){
     let score = 0;
     let nbMotsProposes = 0;
     
+    let btnValiderMot = document.getElementById('btnValiderMot');
+    btnValiderMot.addEventListener('click',()=>{
+        console.log("j'ai cliqué");
+    })
+    
     afficherResultat(score,nbMotsProposes);
 }
